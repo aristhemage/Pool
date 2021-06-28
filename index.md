@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title> Test Website </title>
-</head>
 <body>
-<h1>This is a test </h1>
+<h1>Jacob's pool clock </h1>
+<h3>See how many rotations you have left before your day is over and other things too!</h3>
 </body>
 </html>
