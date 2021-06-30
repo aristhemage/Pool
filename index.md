@@ -9,7 +9,7 @@
 <label for="time1">2:00</label><br>
 <input type="radio" id="time" name="time" value="4">
 <label for="time1">4:00</label><br>
-<br><br>
+<br>
 <h4> Please enter when your shift ends: </h4>
 <input type="radio" id="time" name="time2" value="4">
 <label for="time1">4:00</label><br>
@@ -25,15 +25,19 @@
 <script>
 function script(){
 var radios = document.getElementsByName('time');
-
+var radios2 = document.getElementsByName('time2'); 
+var timeIN = 0;
+var timeOut = 0;
 for (var i = 0, length = radios.length; i < length; i++) {
   if (radios[i].checked) {
-    // do whatever you want with the checked radio
-    if (radios[i].value == 11){
-  document.write("Hello World!");
-    }
-
-    // only one radio can be logically checked, don't check the rest
+    timeIN = radios[i].checked;
+    break;
+  }
+}
+  
+  for (var i = 0, length = radios.length; i < length; i++) {
+  if (radios[i].checked) {
+    timeOUT = radios[i].checked;
     break;
   }
 }
