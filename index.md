@@ -21,4 +21,8 @@
 <input type="radio" id="time" name="time2" value="9.5">
 <label for="time1">9:30</label><br>
 
+    <button type="button" onclick="script()">
+        Submit
+    </button>
+
 <script src="script.js" type="text/javascript"></script>
