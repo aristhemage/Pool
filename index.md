@@ -24,12 +24,6 @@
 
 <p id='hidden' style='display: none'>This is a test</p>    
 
-  <h1 id = 'hidden' style='display: none'>You clock in at <span id="time"></span></h1>
-  <script>
-    let time = timeIN;
-    document.getElementById("time").innerHTML = time;
-  </script>
-  
 <script>
 function script(){
 var radios = document.getElementsByName('time');
@@ -59,6 +53,7 @@ for (var i = 0, length = radios.length; i < length; i++) {
   } else {
     text.style.display = "none";
   }
+  document.write("<h1>Main title</h1>");
 }
   
   </script>
