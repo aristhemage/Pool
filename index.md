@@ -22,4 +22,21 @@
 <label for="time1">9:30</label><br>
 
 <button onclick="script()">Submit</button>
-<script src="script.js" type="text/javascript"></script>
+
+<script>
+function script(){
+var radios = document.getElementsByName('time');
+
+for (var i = 0, length = radios.length; i < length; i++) {
+  if (radios[i].checked) {
+    // do whatever you want with the checked radio
+    if (radios[i].value == 11){
+  document.write("Hello World!");
+    }
+
+    // only one radio can be logically checked, don't check the rest
+    break;
+  }
+}
+}
+  </script>
