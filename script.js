@@ -1,4 +1,4 @@
-var radios = document.getElementsByName('time1');
+var radios = document.getElementsByName('time');
 
 for (var i = 0, length = radios.length; i < length; i++) {
   if (radios[i].checked) {
