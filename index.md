@@ -22,6 +22,8 @@
 
 <button onclick="script()">Submit</button>
 
+<p id='hidden' style='display: none'>This is a test</p>    
+
 <script>
 function script(){
 var radios = document.getElementsByName('time');
@@ -41,5 +43,18 @@ for (var i = 0, length = radios.length; i < length; i++) {
     break;
   }
 }
+  toggleText();
 }
+  
+  function toggleText() {
+  var text = document.getElementById("hidden");
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+  
   </script>
+  
+  
